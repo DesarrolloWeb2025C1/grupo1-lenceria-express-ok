@@ -16,7 +16,7 @@ El proyecto se va a visualizar con una estructura clara, algo así:
 
 Esta organización va a permitir mantener separados los estilos, scripts, imágenes y componentes del sitio.
 
-1) Control de versiones
+3) Control de versiones
 *  Se empleará Git como sistema de control de versiones, utilizando  una plataforma como GitHub o GitLab para almacenar y compartir el código
 * Cada cambio o mejora se registrará mediante commits con mensajes descriptivos.
 * Se trabajará con ramas (branches) para evitar conflictos entre los desarrolladores
