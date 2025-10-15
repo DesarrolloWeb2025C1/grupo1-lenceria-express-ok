@@ -562,3 +562,7 @@ video{
     padding: 2rem;
     font-size: 2rem;
 }
+
+.contenedor-encabezado {
+    min-height: 90vh;
+}
