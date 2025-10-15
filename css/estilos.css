@@ -125,7 +125,7 @@ img{
 }
 /*encabezado*/
 .contenedor-navegacion{
-    background-color: var(--oscuro);
+    background-color: black ;
     position: relative;
     z-index: 5;
   
