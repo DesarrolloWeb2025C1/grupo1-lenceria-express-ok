@@ -14,6 +14,7 @@ html{
 body{
     font-size: 1.6rem;
     overflow-x: hidden;
+    font-family: "Roboto Flex", sans-serif;
 }
 
 *,*::after, *::before{
@@ -26,28 +27,10 @@ body{
     width: 95%;
 }
 h1,h2{
-    font-family: 
-    .roboto-flex-<uniquifier> {
-  font-family: "Roboto Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "XOPQ" 96,
-    "XTRA" 468,
-    "YOPQ" 79,
-    "YTAS" 750,
-    "YTDE" -203,
-    "YTFI" 738,
-    "YTLC" 514,
-    "YTUC" 712;
+    font-family:"Roboto Flex", sans-serif;
+    font-weight: bold;
 }
 
-
-}
 h3, p, a{
     font-family: var(--parrafos);
 }
