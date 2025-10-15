@@ -27,7 +27,7 @@ body{
 }
 h1,h2{
     font-family: 
-.roboto-flex-<uniquifier> {
+    .roboto-flex-<uniquifier> {
   font-family: "Roboto Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -44,7 +44,9 @@ h1,h2{
     "YTFI" 738,
     "YTLC" 514,
     "YTUC" 712;
-};
+}
+
+
 }
 h3, p, a{
     font-family: var(--parrafos);
