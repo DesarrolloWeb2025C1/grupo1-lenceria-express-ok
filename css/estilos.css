@@ -14,6 +14,7 @@ html{
 body{
     font-size: 1.6rem;
     overflow-x: hidden;
+    font-family: "Roboto Flex", sans-serif;
 }
 
 *,*::after, *::before{
@@ -26,8 +27,10 @@ body{
     width: 95%;
 }
 h1,h2{
-    font-family: var(--titulos);
+    font-family:"Roboto Flex", sans-serif;
+    font-weight: bold;
 }
+
 h3, p, a{
     font-family: var(--parrafos);
 }
@@ -543,4 +546,8 @@ video{
     color: var(--blanco);
     padding: 2rem;
     font-size: 2rem;
+}
+
+.contenedor-encabezado {
+    min-height: 90vh;
 }
