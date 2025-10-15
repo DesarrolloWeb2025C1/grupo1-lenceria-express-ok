@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Grupo1 Lencería Express</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <main>
+        <!-- Formulario de checkout -->
+        <form id="checkout-form">
+            <section class="datos-contacto">
+                <h2>Datos de contacto</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </section>
+            <section class="envio">
+                <fieldset class="envio__seleccion-logistica">
+                    <legend>Seleccionar envio</legend>
+                    
+                    <input name="andreani" type="radio">
+                    <label name="andreani">Andreani</label>
+                    
+                    <input for="correo-argentino" type="radio">
+                    <label for="correo-argentino">Correo Argentino</label>
+                </fieldset>
+
+                <div class="envio__direccion ocultar">
+                    <h2>Dirección de envío</h2>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                    <label for="codigo-postal">Código Postal:</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" required>
+                </div>
+            </section>
+            <button type="submit">Finalizar pedido</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Grupo1 Lencería Express</p>
+    </footer>
+
+    <script src="./js/checkout.js"></script>
+</body>
+
+</html>
