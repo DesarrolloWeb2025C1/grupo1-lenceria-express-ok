@@ -298,47 +298,51 @@ video{
 .menu{
     padding-top: 4rem;
 }
-/*platillos*/
-.texto-platillos{
+/*card*/
+.texto-card{
     text-align: center;
     font-size: 5rem;
 }
 
-.botones-platillos{
+.botones-card{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.botones-platillos button{
+.botones-card button{
     flex: 0 0 calc(50% - 1rem);
     padding: 1rem 3rem;
 }
 @media(min-width: 768px) {
-    .botones-platillos{
+    .botones-card{
         display: inline-block;
     }
-    .botones-platillos button{
+    .botones-card button{
         flex: unset;
     }
 }
 @media(min-width: 768px) {
-    .platillos{
+    .card{
         display: flex;
         justify-content: space-between;
         flex-wrap:wrap;
     }
 }
-.platillo{
+.card{
     flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #e1e1e1;
     padding: 2rem;
     border-radius: 5px;
 }
-.platillo h2{
+.card h2{
     text-align: center;
 }
-.platillo p{
+.card p{
     font-size: 1.8rem;
+}
+.card > img {
+    height: 300px;
+    width: 300px;
 }
 .precio{
     display: flex;
