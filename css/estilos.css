@@ -310,7 +310,7 @@ video{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.botones-card button{
+.botones-card a{
     flex: 0 0 calc(50% - 1rem);
     padding: 1rem 3rem;
 }
@@ -318,7 +318,7 @@ video{
     .botones-card{
         display: inline-block;
     }
-    .botones-card button{
+    .botones-card a{
         flex: unset;
     }
 }
@@ -329,14 +329,22 @@ video{
         flex-wrap:wrap;
     }
 }
+
 .card{
     flex: 0 0 calc(33.3% - 1rem);
+    flex-wrap: wrap;
     border: 1px solid #e1e1e1;
     padding: 2rem;
     border-radius: 5px;
+    gap: 10px;
 }
-.card h2{
+.card--rosa {
+    background-color: #f3d8d8;
+    box-shadow: 0px 5px 10px -6px rgb(64, 64, 64);
+}
+.card h2, .card p{
     text-align: center;
+    width: 100%;
 }
 .card p{
     font-size: 1.8rem;
@@ -345,15 +353,17 @@ video{
     height: 300px;
     width: 300px;
 }
+
 .precio{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 .precio p{
     font-weight: bold;
     font-size: 2rem;
 }
-.precio button{
+.precio a{
     padding:1rem;
     border-radius: 5px;
     border: none;
