@@ -196,9 +196,11 @@ img{
     margin-bottom: .5rem;
 }
 
-/*video*/
+/*imagen de la marca*/
 .contenido-header{
-    position: relative;
+    background-image: url(../solologo.jpeg);
+    background-size: cover;
+    justify-content: center;
 }
 
 .contenido-header::before{
