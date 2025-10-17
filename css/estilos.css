@@ -386,7 +386,7 @@ video{
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.5);
+    background-color: #ffe7ff;
     z-index: -1;
 }
 
@@ -399,15 +399,16 @@ video{
     color: var(--blanco);
     text-align: center;
 }
+/*porque entendemos las necesidades"*/
 @media(min-width: 768px) {
     .contenido-separador h2{
         text-align: left;
-        font-size: 5rem;
-        color: var(--blanco);
+        font-size: 4rem;
+        color: var(--negro);
     }
 }
 .contenido-separador p{
-    color: var(--blanco);
+    color: var(--negro);
     font-size: 3rem;
     text-align: center;
 }
