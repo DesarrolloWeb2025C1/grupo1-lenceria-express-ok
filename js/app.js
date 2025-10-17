@@ -75,10 +75,10 @@ const platillos = () =>{
 
     platillos.forEach(platillo=> platillosArreglo = [...platillosArreglo,platillo]);
 
-    const ensaladas = platillosArreglo.filter(ensalada=> ensalada.getAttribute('data-platillo') === 'ensalada');
-    const pastas = platillosArreglo.filter(pasta => pasta.getAttribute('data-platillo') === 'pasta');
-    const pizzas = platillosArreglo.filter(pizza => pizza.getAttribute('data-platillo') === 'pizza');
-    const postres = platillosArreglo.filter(postre=> postre.getAttribute('data-platillo') === 'postre');
+    const ensaladas = platillosArreglo.filter(ensalada=> ensalada.getAttribute('data-prenda') === 'bombacha');
+    const pastas = platillosArreglo.filter(pasta => pasta.getAttribute('data-prenda') === 'pasta');
+    const pizzas = platillosArreglo.filter(pizza => pizza.getAttribute('data-prenda') === 'pizza');
+    const postres = platillosArreglo.filter(postre=> postre.getAttribute('data-prenda') === 'postre');
 
     mostrarPlatillos(ensaladas, pastas, pizzas, postres, platillosArreglo);
 
