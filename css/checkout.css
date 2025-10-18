@@ -6,7 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 body {
   background-image: url("../img/fondo-lenceria.jpg"); 
   background-size: cover;
@@ -78,18 +77,22 @@ button {
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 1rem;
+  font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 1s;
+}
+
+label{
+  display: inline;
 }
 
 button:hover {
-  background-color: #b32c6b;
+  background-color: #76234a;
 }
 
 footer {
   background-color: rgba(255, 192, 203, 0.85);
   text-align: center;
   padding: 15px;
-  color: #fff;
+  color: #000000;
 }
