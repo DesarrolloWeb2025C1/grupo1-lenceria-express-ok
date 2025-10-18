@@ -1,4 +1,6 @@
-const menu = document.querySelector('.hamburguesa');
+// el HTML actual usa `.lenceria` como el botón tipo hamburguesa.
+// Seleccionamos de forma robusta cualquiera de las dos clases.
+const menu = document.querySelector('.hamburguesa, .lenceria');
 const navegacion = document.querySelector('.navegacion');
 const imagenes = document.querySelectorAll('img');
 const btnTodos = document.querySelector('.todos');
@@ -13,12 +15,27 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 
 const eventos = () =>{
+    console.log('Inicializando eventos de UI...');
+    if (!menu) {
+        console.warn('Botón de menú no encontrado (se buscó .hamburguesa o .lenceria). La navegación no se podrá abrir.');
+        return;
+    }
+    // accesibilidad y estilo por si falta en CSS
+    try{
+        menu.setAttribute('role','button');
+        menu.style.cursor = 'pointer';
+    } catch(e){}
+    console.log('Botón de menú encontrado:', menu);
     menu.addEventListener('click',abrirMenu);
 }
 
 const abrirMenu = () =>{
-     navegacion.classList.remove('ocultar');
-     botonCerrar();
+    if (!navegacion){
+        console.warn('Elemento .navegacion no encontrado en abrirMenu.');
+        return;
+    }
+    navegacion.classList.remove('ocultar');
+    botonCerrar();
 }
 
 const botonCerrar = () =>{
@@ -34,8 +51,15 @@ const botonCerrar = () =>{
     // while(navegacion.children[5]){
     //     navegacion.removeChild(navegacion.children[5]);
     // }
-    navegacion.appendChild(btnCerrar);   
-    cerrarMenu(btnCerrar,overlay);
+    if (navegacion) {
+        navegacion.appendChild(btnCerrar);
+        cerrarMenu(btnCerrar,overlay);
+    } else {
+        // si por alguna razón no existe la navegación, eliminamos el overlay y el botón creado
+        console.warn('Elemento .navegacion no encontrado. No se puede mostrar el menú.');
+        overlay.remove();
+        btnCerrar.remove();
+    }
     
 }
 
@@ -56,16 +80,18 @@ imagenes.forEach(imagen=>{
 });
 
 const cerrarMenu = (boton, overlay) =>{
-    boton.addEventListener('click',()=>{
-        navegacion.classList.add('ocultar');
-        overlay.remove();
-        boton.remove();
-    });
+    if (boton) {
+        boton.addEventListener('click',()=>{
+            if (navegacion) navegacion.classList.add('ocultar');
+            overlay.remove();
+            boton.remove();
+        });
+    }
 
     overlay.onclick = function(){
         overlay.remove();
-        navegacion.classList.add('ocultar');  
-        boton.remove();
+        if (navegacion) navegacion.classList.add('ocultar');  
+        if (boton) boton.remove();
     }
 }
 

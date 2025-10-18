@@ -196,6 +196,22 @@ img{
     margin-bottom: .5rem;
 }
 
+/* estilos para el botón real en el HTML: .lenceria (tres barras) */
+.lenceria{
+    display: inline-block;
+    padding: 1rem;
+}
+.lenceria:hover{
+    cursor: pointer;
+}
+.lenceria span{
+    background-color: var(--blanco);
+    display: block;
+    width: 5rem;
+    height: .5rem;
+    margin-bottom: .5rem;
+}
+
 /*imagen de la marca*/
 .contenido-header{
     background-image: url(../solologo.jpeg);
